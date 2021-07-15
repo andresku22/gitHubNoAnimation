@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(136, 71, 156);
+    padding-left: 20px;
+    text-align: center;
+}
+header{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(6, 6, 14);
+    background-image: linear-gradient(to top, rgb(195, 186, 196), rgb(80, 5, 141) );
+
+}
+
+h1{
+     font-size: 50px;
+     font-family: fantasy;
+     padding-left: 100px;
+     text-transform: capitalize;
+     color: rgb(28, 27, 29);
+     
+}
+h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(136, 71, 156);
+}
+
+h3{
+    color: rgb(136, 71, 156);
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+
+}
+.fotoEspumantes{
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    
+}
+.imagenHabanos{
+    width: 350px;
+    height: 200px;
+}
+
+main
+{background-color: rgb(255, 255, 255);}
+ 
+ .fotoVinos{
+     width: 250px;
+     height: 300px;
+ }
+ ul{
+     list-style-type: none;
+     display: flex;
+     height: 100%;
+     justify-content: space-evenly;
+     text-transform: capitalize;
+ }
+ li{
+     height: 35%;
+     color: darkorchid;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 35px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: capitalize;
+     
+ }
+
+.fotomainindex{
+    height: 400px;
+    width: 400px;
+}
+footer{
+    justify-items: self-end;
+    margin-top: 100px;
+    background-image: linear-gradient(to top, rgb(195, 186, 196), rgb(80, 5, 141) );
+}
+
+
+
+
+
+
+  
+  
+
+
+   .parrafovinos{
+       padding-left: 50px;
+   }
+
+
+   #grillaEspumantes{
+       margin-left: 10px;
+   }
+   
+    @media only screen and (max-width:600px) {
+
+        #grilla{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 10% 50% 20%;
+            grid-template-areas: "header"
+                                  "nav"
+                                  "main"
+                                  "footer";
+        }  
+        
+        #grillaIndex{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+            grid-template-areas: "foto1 "
+                                 "foto2"
+                                 "foto3"
+                                 "foto4"
+                                 "foto5"
+                                 "foto6";
+            column-gap: 20px;   
+            row-gap: 30px;                 
+        }
+        #grillaTres{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "foto1" 
+                                 "foto2" 
+                                 "foto3";
+                                 
+            column-gap: 5px;   
+            row-gap: 5px;       
+                    
+        }
+ 
+        #grillaEspumantes{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "foto1 "
+                                 "foto2"
+                                 "foto3"
+                                 "foto4"
+                                 "foto5"
+                                 "foto6";
+                            
+            column-gap: 20px;   
+            row-gap: 20px;                 
+        }
+
+        #grillaVinos{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "foto1 "
+                                 "foto2"
+                                 "foto3"
+                                 "foto4"
+                                 "foto5"
+                                 "foto6";
+            column-gap: 10px;   
+            row-gap: 10px;                 
+        }
+        #grillaHabanos{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-areas: "foto1 "
+                                 "foto2"
+                                 "foto3"
+                                 "foto4"
+                                 "foto5"
+                                 "foto6";
+            column-gap: 10px;
+            row-gap: 15px;   
+
+        }
+        ul{
+            flex-direction: row;
+        }
+        header{
+            grid-area: header;    
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        footer{
+            grid-area: footer;
+        }
+    }
+    @media only screen and (min-width:600px) {
+
+        #grilla{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 10% 60% 10%;
+            grid-template-areas: "header"
+                                  "nav"
+                                  "main"
+                                  "footer";
+        }  
+        
+        #grillaIndex{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "foto1  foto2"
+                                 "foto3  foto4"
+                                 "foto5 foto6";
+            column-gap: 20px;   
+            row-gap: 30px; 
+            align-items: center;    
+            justify-items: center;            
+        }
+        #grillaTres{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr;
+            grid-template-areas: "foto1" "foto2" "foto3";
+            align-items: center;    
+            justify-items: center;                    
+            column-gap: 20px;   
+            row-gap: 30px;                 
+        }
+        #grillaEspumantes{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "foto1 foto2 "
+                                 "foto3  foto4"
+                                 "foto5 foto6";
+            column-gap: 10px;   
+            row-gap: 10px;                 
+        }
+        #grillaHabanos{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-areas: "foto1 foto2 "
+                                 "foto3  foto4"
+                                 "foto5 foto6";
+                 
+            column-gap: 10px;
+            row-gap: 15px;   
+
+        }
+
+        #grillaVinos{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-areas: "foto1 foto2 "
+                                  "foto3 foto4"
+                                  "foto5 foto6" ;
+            
+            column-gap: 10px;   
+            row-gap: 10px;   
+               }  
+            
+           
+            ul{
+                flex-direction: row;
+            }
+            header{
+                grid-area: header;    
+            }
+            nav{
+                grid-area: nav;
+            }
+            main{
+                grid-area: main;
+            }
+            footer{
+                grid-area: footer;
+            }           
+        }
+
+        
+
+    @media only screen and (min-width:1000px) {
+
+        #grilla{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 10% 60% 10%;
+            grid-template-areas: "header"
+                                  "nav"
+                                  "main"
+                                  "footer";
+        }  
+        
+        #grillaIndex{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "foto1  foto2 foto3"
+                                 "foto4  foto5 foto6";
+                                 
+            column-gap: 20px;   
+            row-gap: 30px; 
+            align-items: center;    
+            justify-items: center;            
+        }
+        #grillaTres{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "foto1" "foto2" "foto3";
+            justify-items: center;              
+            column-gap: 20px;   
+            row-gap: 30px;                 
+        }
+        #grillaEspumantes{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas: "foto1 foto2 foto3 "
+                                 "foto4  foto5 foto6";
+            column-gap: 10px;   
+            row-gap: 10px;                 
+        }
+
+        #grillaVinos{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas: "foto1 foto2  foto3"
+                                 "foto4  foto5 foto6";
+            column-gap: 10px;   
+            row-gap: 10px;                 
+        }
+        #grillaHabanos{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas: "foto1 foto2  foto3"
+                                 "foto4  foto5 foto6";
+            column-gap: 10px;   
+            row-gap: 10px;                 
+        }
+
+        #fotos{
+            width: 80%;
+            height: 80%;
+        }
+        ul{
+            flex-direction: row;
+        }
+        header{
+            grid-area: header;    
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        footer{
+            grid-area: footer;
+        }
+    }
+   
+    .imagenf{
+        width: 50px;
+        height: 50px;
+        
+    }
+#grillaContacto{
+    margin: 20px;
+}
